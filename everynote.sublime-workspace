@@ -1,0 +1,947 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sub",
+				"\\subsection*{}"
+			],
+			[
+				"ub",
+				"\\underbrace{}{}"
+			],
+			[
+				"cal",
+				"\\mathcal"
+			],
+			[
+				"app",
+				"\\approx"
+			],
+			[
+				"subs",
+				"\\subsubsection*{}"
+			],
+			[
+				"end",
+				"end{section}\tmain.tex"
+			],
+			[
+				"newco",
+				"newcommand{cmd}[args]{def}\tlatex-document"
+			],
+			[
+				"input",
+				"input{file}\tlatex-document"
+			],
+			[
+				"sec",
+				"section*{title}\tlatex-document"
+			],
+			[
+				"pop",
+				"pop_back\tfunc"
+			],
+			[
+				"emp",
+				"empty\tfunc"
+			],
+			[
+				"iostr",
+				"I-iostream\tinc"
+			],
+			[
+				"uni",
+				"unique\tfunc"
+			],
+			[
+				"co",
+				"cout\tiostream"
+			],
+			[
+				"push",
+				"push_back\tfunc"
+			],
+			[
+				"en",
+				"end\tfunc"
+			],
+			[
+				"puch",
+				"push_back\tfunc"
+			],
+			[
+				"str",
+				"string\tstandard header"
+			],
+			[
+				"Long",
+				"\\Longleftrightarrow"
+			],
+			[
+				"subsub",
+				"\\subsubsection{}"
+			],
+			[
+				"unde",
+				"\\underset{}{}"
+			],
+			[
+				"over",
+				"\\overline{}"
+			],
+			[
+				"ddtos",
+				"\\ddots"
+			],
+			[
+				"under",
+				"\\underset{}{}"
+			],
+			[
+				"right",
+				"\\Rightarrow"
+			],
+			[
+				"be",
+				"\\begin"
+			],
+			[
+				"var",
+				"\\varkappa"
+			],
+			[
+				"in",
+				"\\includegraphics"
+			],
+			[
+				"line",
+				"\\linewidth"
+			],
+			[
+				"lin",
+				"\\linewidth"
+			],
+			[
+				"frame",
+				"\\frametitle"
+			],
+			[
+				"ic",
+				"\\includegraphics"
+			],
+			[
+				"inc",
+				"\\includegraphics"
+			],
+			[
+				"L",
+				"\\LaTeX"
+			],
+			[
+				"ta",
+				"ta\ttemplate_beamer"
+			],
+			[
+				"b",
+				"break\tkeyword"
+			],
+			[
+				"sc",
+				"score2\tstatement"
+			],
+			[
+				"y",
+				"y_t_max\tstatement"
+			],
+			[
+				"ba",
+				"balls\tstatement"
+			],
+			[
+				"tk",
+				"tkinter\tmodule"
+			],
+			[
+				"alp",
+				"\\aleph\tℵ"
+			],
+			[
+				"ep",
+				"\\epsilon\tϵ"
+			],
+			[
+				"ale",
+				"\\angle\t∠"
+			],
+			[
+				"flo",
+				"\\forall\t∀"
+			],
+			[
+				"ho",
+				"\\house\t⌂"
+			],
+			[
+				"h",
+				"\\hslash\tℏ"
+			],
+			[
+				"Butt",
+				"Button-1"
+			],
+			[
+				"sav",
+				"savesckore\tfunction"
+			],
+			[
+				"r",
+				"range\tfunction"
+			],
+			[
+				"mo",
+				"move_ball"
+			],
+			[
+				"cre",
+				"create_oval\tfunction"
+			],
+			[
+				"wi",
+				"windowSize\tfunction"
+			],
+			[
+				"mov",
+				"moveObjectBy\tfunction"
+			],
+			[
+				"move",
+				"moveObjectBy\tfunction"
+			],
+			[
+				"on",
+				"onTimer\tfunction"
+			],
+			[
+				"canvas",
+				"canvasSize\tfunction"
+			],
+			[
+				"rota",
+				"rotate_square\tfunction"
+			],
+			[
+				"lst",
+				"lst\tstatement"
+			],
+			[
+				"le",
+				"__len__\tfunction"
+			],
+			[
+				"gr",
+				"graphOld\tmodule"
+			],
+			[
+				"g",
+				"gradient_cloud\tfunction"
+			],
+			[
+				"py",
+				"pyplot\tmodule"
+			],
+			[
+				"ali",
+				"alien_noApple\tfunction"
+			],
+			[
+				"Win",
+				"windowSize\tfunction"
+			],
+			[
+				"hand_",
+				"hand_down"
+			],
+			[
+				"pen",
+				"penColor\tfunction"
+			],
+			[
+				"leg",
+				"leg_right"
+			],
+			[
+				"han",
+				"hand_down"
+			],
+			[
+				"ha",
+				"hand_up"
+			],
+			[
+				"mi",
+				"mirror\tparam"
+			],
+			[
+				"main",
+				"main_body\tfunction"
+			],
+			[
+				"ufo",
+				"ufo_lamps"
+			],
+			[
+				"ufo_",
+				"ufo_ship\tfunction"
+			],
+			[
+				"uf",
+				"ufo_light\tfunction"
+			],
+			[
+				"moveO",
+				"moveObjectTo\tfunction"
+			],
+			[
+				"br",
+				"brushColor\tfunction"
+			],
+			[
+				"pe",
+				"penSize\tfunction"
+			],
+			[
+				"x",
+				"x_b\tparam"
+			],
+			[
+				"l",
+				"light\tstatement"
+			],
+			[
+				"po",
+				"polygon\tfunction"
+			],
+			[
+				"li",
+				"line\tfunction"
+			],
+			[
+				"w",
+				"width\tstatement"
+			],
+			[
+				"can",
+				"canvasSize\tfunction"
+			],
+			[
+				"p",
+				"paint1_3"
+			],
+			[
+				"s",
+				"SpaceIsFree"
+			],
+			[
+				"I",
+				"IsBoardFull"
+			],
+			[
+				"pr",
+				"PrintBoard"
+			],
+			[
+				"is",
+				"IsBoardFull"
+			],
+			[
+				"P",
+				"PrintBoard"
+			],
+			[
+				"sol",
+				"solution"
+			],
+			[
+				"Err",
+				"ErrorLevel"
+			],
+			[
+				"ca",
+				"can_one"
+			],
+			[
+				"j",
+				"jMax"
+			],
+			[
+				"jM",
+				"jMax"
+			],
+			[
+				"E",
+				"ErrorLevel"
+			],
+			[
+				"n",
+				"number"
+			],
+			[
+				"M",
+				"MAXSZ"
+			],
+			[
+				"bl",
+				"bl_len"
+			],
+			[
+				"m",
+				"main\tmethod (main)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Евгений/Desktop/github_repos/notes_4sem/anmec/tickets/settings/heading.tex",
+			"settings":
+			{
+				"buffer_size": 439,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"upd",
+				"LaTeX042A: update resources"
+			],
+			[
+				"upda",
+				"LaTeX042A: update resources"
+			],
+			[
+				"edit",
+				"LaTeX042A: edit snippets"
+			],
+			[
+				"update",
+				"LaTeX042A: update resources"
+			],
+			[
+				"42",
+				"LaTeX042A: update resources"
+			],
+			[
+				"math",
+				"LaTeXYZ: Toggle Auto Set Preview Math Template Preamble"
+			],
+			[
+				"keyma",
+				"LaTeX042A: open keymaps compiled file"
+			],
+			[
+				"reso",
+				"LaTeX042A: update resources"
+			],
+			[
+				"dlet",
+				"File: Delete"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ren",
+				"Rename File"
+			],
+			[
+				"open",
+				"LaTeX042A: open keymaps folder"
+			],
+			[
+				"Ren",
+				"Rename File"
+			],
+			[
+				"Buildwith",
+				"Build With: LaTeX - PdfLaTeX"
+			],
+			[
+				"File ren",
+				"File: Rename"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"renam",
+				"Rename File"
+			],
+			[
+				"Rena",
+				"Rename File"
+			],
+			[
+				"latex",
+				"LaTeXTools: Build cache of LaTeX packages"
+			],
+			[
+				"la",
+				"LaTeXTools: Open Detexify"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"floo",
+				"Floobits - Help"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"INsta",
+				"Package Control: Install Package"
+			],
+			[
+				"Remo",
+				"Remote: Connect to Session"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"pip instal pylatex",
+			"pip install pylatex",
+			"4",
+			"  5",
+			"for i in range(44):",
+			"5 - 2",
+			"python",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Евгений/Desktop/everynote",
+		"/C/Users/Евгений/Desktop/everynote/inputs",
+		"/C/Users/Евгений/Desktop/everynote/settings"
+	],
+	"file_history":
+	[
+		"/C/Users/Евгений/Desktop/github_repos/notes_4sem/anmec/tickets/settings/inputs.tex",
+		"/C/Users/Евгений/Desktop/everynote/settings/heading.tex",
+		"/C/Users/Евгений/Desktop/everynote/everynote.sublime-project",
+		"/C/Users/Евгений/Desktop/everynote/everynote.tex",
+		"/C/Users/Евгений/Desktop/everynote/settings/inputs.tex",
+		"/D/Google Диск/людям/19/slides/stat.tex",
+		"/C/Users/Евгений/Desktop/pre/inputs/03_magvel_solution.tex",
+		"/C/Users/Евгений/Desktop/pre/inputs/01_velocity_solution.tex",
+		"/C/Users/Евгений/Desktop/pre/inputs/02_magnet_solution.tex",
+		"/C/Users/Евгений/Desktop/pre/inputs/04_berry_solution.tex",
+		"/C/Users/Евгений/Desktop/pre/inputs/11_opt_lec.tex",
+		"/C/Users/Евгений/Desktop/pre/inputs/04_magvel_solution.tex",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/Default (Windows).sublime-keymap",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/LaTeX042A/README.md",
+		"/C/Users/Евгений/Desktop/pre/main.tex",
+		"/C/Users/Евгений/Desktop/pre/settings/inputs.tex",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/LaTeX042A/support/Default.sublime-keymap",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXYZ/Default (Windows).sublime-mousemap",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/User/snippets/hop_in_equation.sublime-snippet",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/LaTeX042A/sources/snippets/11.sublime-snippet",
+		"/D/Google Диск/mentor/writing/pre/settings/heading.tex",
+		"/D/Google Диск/mentor/writing/pre/settings/environments.tex",
+		"/D/Google Диск/mentor/writing/pre/settings/header.tex",
+		"/D/Google Диск/mentor/writing/pre/settings/settings.tex",
+		"/D/Google Диск/mentor/writing/pre/main.sublime-project",
+		"/D/Google Диск/mentor/writing/vel/ma_tickets.sublime-project",
+		"/C/Users/Евгений/Desktop/bot/rfoe/main.py",
+		"/C/Users/Евгений/Desktop/bot/semperevod_bot/TexCreate.py",
+		"/C/Users/Евгений/Desktop/bot/semperevod_bot/main.py",
+		"/C/Users/Евгений/Desktop/bot/ascii/test.py",
+		"/C/Users/Евгений/Desktop/bot/ascii/2.txt",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1253/project.sublime-project",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/LaTeX042A/sources/keymaps/local_math_env.json",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1253/main.tex",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/LaTeX042A/commands.py",
+		"/D/Games/DwarfFortress/LNP/about/about.txt",
+		"/C/Users/Евгений/Desktop/cpp/satprog/kr2/E.cpp",
+		"/D/Tools/COMSOL.Multiphysics.5.5.0.359.Full.Win.Linux-SSQ/_SolidSQUAD_/readme_windows.txt",
+		"/D/Tools/COMSOL.Multiphysics.5.5.0.359.Full.Win.Linux-SSQ/version_info.txt",
+		"/F/readme.txt",
+		"/F/license_en_US.txt",
+		"/D/Google Диск/ЖиК/labs/3.7.1/calculated_data.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/sol4.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/sol3.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/sol2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/sol1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/stat.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/main.tex",
+		"/C/Users/Евгений/AppData/Local/Temp/Temp1_df_47_04_win.zip/readme.txt",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/preambule/packages.tex",
+		"/C/Users/Евгений/Desktop/scripts/languagefix.ps1",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/surp2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/surp3.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/surp1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/over.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/lowgraph1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/high0.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/prelow.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/litr.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/low.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/1227/slides/high2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/values.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/prelow.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/low.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/errorlow.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/high1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/theory2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/theory1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/high2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/high0.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/theory3.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/lowgraph.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/lowgraph1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/cause.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/charge/main.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/slides/over.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/skin/preambule/packages.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/hist/main.tex",
+		"/C/Users/Евгений/Desktop/recipes/settings/preambule.tex",
+		"/C/Users/Евгений/Desktop/My Prog Train/bot/basic.tex",
+		"/C/Users/Евгений/Desktop/My Prog Train/bot/test.py",
+		"/C/Users/Евгений/Desktop/recipes/main.tex",
+		"/C/Users/Евгений/Desktop/My Prog Train/infa_2019_primak/test.py",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/fst3.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/fst2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/fst1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/thr3.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/snd6.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/thr4.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/concl1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/main.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/s",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/meas1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/meas2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/over1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/thr1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/hist/slides/fenifoto.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/thr2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/snd1.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/snd2.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/snd5.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/snd4.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/snd8.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/snd7.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/32/slides/snd3.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/earth/main.tex",
+		"/D/Downloads/exa125.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/earth/exa068.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/earth/settings/heading.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/earth/tables.tex",
+		"/C/Users/Евгений/Desktop/hometasks/labs/earth/body.tex",
+		"/C/Users/Евгений/Desktop/hometasks/analmech/I/problems/T1.tex",
+		"/C/Users/Евгений/Desktop/cpp/satprog/01sat/a.cpp",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Евгений/Desktop/github_repos/3sem2020/prans/03.09/quests/5.tex",
+		"/C/Users/Евгений/Desktop/github_repos/3sem2020/prans/03.09/body.tex",
+		"/C/Users/Евгений/Desktop/github_repos/3sem2020/prans/03.09/settings/heading.tex",
+		"/C/Users/Евгений/Desktop/github_repos/3sem2020/prans/03.09/project.sublime-project",
+		"/C/Users/Евгений/Desktop/github_repos/3sem2020/prans/03.09/plans.tex",
+		"/C/Users/Евгений/Desktop/Session2020spring/MatAn_2020_v2/theor_max/parts/5.13_Examples_of_the_application_of_the_Lebesgue_integral.tex",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Евгений/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Евгений/Desktop/answer/settings/heading.tex",
+		"/C/Users/Евгений/Desktop/answer/parts/primak_5.tex",
+		"/C/Users/Евгений/Desktop/answer/settings/inputs.tex"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Евгений/Desktop/github_repos/notes_4sem/anmec/tickets/settings/heading.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 262.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 68.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"project": "everynote.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control Messages"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

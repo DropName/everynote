@@ -1,0 +1,200 @@
+Лектор --- Л.М.Колдунов
+
+Геометрическая оптика $\subset$  волновая оптика $\subset$ эм-оптика $\subset$ квантовая оптика.
+
+Уравнения Максвелла:
+\begin{align*}
+	&\div \vc{D} = 4 \pi \rho_{\text{out}}\\
+	&\div \vc{B} = 0\\
+	&\rot \vc{E} = -\frac{1}{c} \frac{\partial \vc{B}}{\partial t}\\
+	&\rot \bar{H} = \frac{4 \pi}{c}  \vc{j}_{\text{out}} + \frac{1}{c} \frac{\partial \vc{D}}{\partial t}\\
+	&\vc{j}_{\text{out}} = 0
+	\hspace{0.5 cm}
+	\rho_{\text{out}} = 0\\
+\end{align*}
+Покрутим уравнения Максвелла:
+\begin{equation*}
+	\rot \rot \vc{E} = - \frac{1}{c} \frac{\partial}{\partial t} \rot \vc{B}
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\grad \div \vc{E} = - \Delta \vc{E} = -\frac{1}{c}\mu \frac{\partial}{\partial t} \rot \vc{H} = -\frac{\varepsilon \mu}{c^2} \frac{\partial^2 \vc{E}}{\partial t^2}\\
+\end{equation*}
+Получаем уравнение электромагнитной волны:
+\begin{equation}
+	\Delta \vc{E} - \frac{\varepsilon \mu}{c^2} \frac{\partial^2 \vc{E}}{\partial t^2}
+	\label{wave_eq}
+\end{equation}
+
+Получаем решение вида 
+\begin{equation*}
+	\vc{E} = \vc{E}_0 \exp(i \omega t - i \vc{k} \vc{r}) 
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	- k^2 \vc{E} + \frac{\varepsilon \mu}{c^2}\omega^2 \vc{E} = 0
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\frac{\omega^2}{k^2} = \frac{c^2}{\varepsilon \mu}
+\end{equation*}
+
+
+\subsection*{Уравнение Эйконала}
+Имеем постулаты геометрическо оптики:
+\begin{enumerate}
+	\item Свет распространяется в виде лучей; 
+	\item Среда характеризуется показателем преломления $n$: $c_{\text{среды}} = c/n$;
+	\item $\int n d l \to \text{min}$.
+\end{enumerate}
+\begin{to_def}
+	\textit{Оптическим путём} назовём $S = \int_A^B n(\vc{r}) d l$	
+\end{to_def}
+
+Найдём ход лучей в предположении, что $ n(\vc{r})$:
+\begin{equation*}
+	\Delta \vc{E} - \frac{n^2}{c^2} \frac{\partial^2 \vc{E}}{\partial t^2} = 0,
+	\hspace{1 cm}
+	E(\vc{r}, t) = a(\vc{r}) \exp(i k_o \underbrace{\Phi(\vc{r})}_{\text{Эйконал}} - i \omega t).
+\end{equation*}
+Взяв $\vc{E}$ одномерным посчитаем в лоб лапласиан:
+\begin{equation*}
+	\Delta E = \Delta a \exp() - a (\vc{r}) k_0^2 |\grad \Phi|^2 \exp() + i (2 k_0 (\grad a, \grad \Phi) + k_0 a \Delta \Phi)exp()
+\end{equation*}
+Сначала вещественную часть:
+\begin{equation*}
+	 \Delta a \exp() - a (\vc{r}) k_0^2 |\grad \Phi|^2 \exp() + \frac{\omega^2}{c^2}n^2 a \exp() = 0
+	 \hspace{0.5 cm}
+	 \Rightarrow
+	 \hspace{0.5 cm}
+	 \boxed{
+	 |\grad \Phi|^2 = \frac{1}{a k_0^2}\Delta a + n^2.}
+\end{equation*}
+Теперь будем считать верным предположение:
+\begin{equation*}
+	|\lambda \frac{\partial^2 a}{\partial x^2}| \ll |\frac{\partial a}{\partial x}|,
+	\hspace{1 cm}
+	|\lambda \frac{\partial a}{\partial x}| \ll a,
+	\hspace{1 cm}
+	\lambda \to 0.
+\end{equation*}
+Получаем в приближении уравнение Эйконала: 
+\begin{equation}
+	|\grad \Phi| =n.
+\end{equation}
+
+Выражение $\omega t - k_0 \Phi = \const$ задаёт \textit{Волновой фронт}.
+\begin{equation*}
+	\grad \Phi = n \vc{s},
+	\hspace{1 cm}
+	|\vc{s}| =1
+	\hspace{1 cm}
+	\frac{\partial \Phi}{\partial s} = n.
+\end{equation*}
+\begin{equation*}
+	\omega d t - k_0 d \Phi = 0
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\omega d t = k_0 d \Phi = k_0\frac{d \Phi }{d s} d s= k_0 n d s.
+\end{equation*}
+
+\subsection*{Принцип Ферма}
+Пуст $\Phi$ --- задано однозначно: $\grad \Phi = n \vc{s}$.
+Возьмём интеграл по замкнутому контуру:
+\begin{equation*}
+	\oint n(\vc{s}, d \vc{l}) = 0
+	\hspace{0.5 cm}
+	\leadsto
+	\hspace{0.5 cm}
+	\int_{A C B} n(\vc{s}, d \vc{l}) = \int_{A D B} n(\vc{s}, d \vc{l}).
+\end{equation*}
+Но $\vc{s} \cdot d \vc{l} = s d l = d l$ на $A C B$. Тогда и получим выражение, доказывающее принцип Ферма:
+\begin{equation*}
+	\int_{A C B} n d l = \int_{A D B} n \vc{s} \cdot d \vc{l} \leq \int_{A D B} n d l.
+\end{equation*}
+Приведём пару примеров: (Колдунов гнём зеркало)
+
+\subsection*{Траектория луча}
+Было соотношение, что: $m \vc{s} = \grad \Phi$. Для траектории: $\vc{s} = d \vc{r}/ d l$.
+Тогда для градиента (который $d / d l$):
+\begin{equation*}
+	n \frac{d \vc{r}}{d l} = \grad \Phi
+	\hspace{1 cm}
+	\frac{d}{d l} \left(n \frac{d \vc{r}}{d l}\right) = \frac{d}{d l} \grad \Phi = \grad \frac{d \Phi}{d l} = \grad n
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\frac{d}{d l}\left(n \frac{d \vc{r}}{d l}\right) = \grad n.
+\end{equation*}
+Получили уравнение луча. Давайте теперь возьмём однородную среду:
+\begin{equation*}
+	 n = \const 
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	 \frac{d ^2 \vc{r}}{d l^2} = 0
+	 \hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	 \vc{r} = \vc{a} l + \vc{b}.	
+\end{equation*}
+
+Теперь возьмём:
+\begin{equation*}
+	\frac{d}{d l}(n \vc{s}) = \grad n
+	\hspace{0.5 cm}
+	\leadsto
+	\hspace{0.5 cm}
+	\vc{s} \frac{d n }{d l} + n \frac{d \vc{s}}{d l} = \nabla n
+	\hspace{0.5 cm}
+	\leadsto
+	\hspace{0.5 cm}
+	\frac{\vc{N}}{R} = \frac{1}{n} \left(\nabla n - \vc{s} \frac{ d n}{d l}\right)
+\end{equation*}
+Домножим последнее выражение скалярно на $\vc{N}$:
+\begin{equation*}
+	0 < \frac{N^2}{R} = \frac{(\vc{N}, \nabla n)}{n}
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	(\vc{N}, \nabla n) > 0
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\text{Луч поворачивает!}
+\end{equation*}
+
+((Пример про слоистую среду))
+
+\subsection*{Уравнение луча в параксиальном приближении}
+((картинка))
+\begin{equation*}
+	n(y) \cos \theta(y) = n (y d y)\cos \theta(y + dy) 
+	=
+	\left(n(y) + \frac{d n}{d y}\Delta y \right) cos \left(\theta(y) + \frac{d \theta}{d y} \Delta y\right)=  \left(n(y) + \frac{d n}{ d y}\Delta y \right) \left(\cos \theta - \sin \theta(y) \frac{d \theta}{d y} \Delta y \right).
+\end{equation*}
+То есть получаем, что
+\begin{equation*}
+	\frac{d n}{d y} \cos \theta(y) = n(y) \sin \theta(y) \frac{d \theta}{d y}
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\frac{1}{n} \frac{d n}{d y} = \tan \theta \frac{d \theta}{d y} = \frac{d \theta}{d x} = \frac{d^2 y}{d x^2}.
+\end{equation*}
+
+Пример параболической зависимости $n^2 = n_0^2 (1 - \alpha^2 y^2)$ 	SELFOC.
+\begin{equation*}
+	\alpha y \ll 1
+	\hspace{1 cm}
+	y_{x x}'' = \frac{1}{n_0(1 - \alpha^2 y^2)^{1/2}} \frac{d n}{d y} = \frac{- n_0 \alpha^2 y}{n_0 (1 - \alpha^2 y^2)} = - \alpha^2 y.
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	y_{xx}'' + \alpha^2 y = 0.
+\end{equation*}
+Такое вещество используют при создании стекловолокна, суть в том, что при заходе в канал под разными углами скорость примерно одна и та же распространения.
+
+
+
+((забыли про мнимую часть!!!!))

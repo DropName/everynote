@@ -1,0 +1,254 @@
+\subsection*{Матричная оптика}
+
+Луч можно характеризовать его координатой $y$ и углом к оптической оси $x$. То есть $\{ y_1, \theta_1\} <->\leftrightarrow \{y_1, n_1, \theta_1\}$, и $n \theta = v$. Таким образом:
+\begin{equation*}
+	\begin{pmatrix}
+		y_2 \\ \theta_2
+	\end{pmatrix}
+	=
+	\begin{pmatrix}
+		A & B \\ C & D
+	\end{pmatrix}
+	\begin{pmatrix}
+		y_1 & n_1 \theta_1
+	\end{pmatrix}.
+\end{equation*}
+
+\subsubsection*{Матрица перемещения}
+В ходе перемещения:
+\begin{equation*}
+	\left\{
+	\begin{aligned}
+		&\theta_2 = \theta_1\\
+		&y_2 = y_1 + l \theta_1
+	\end{aligned}
+	\right.
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	T = \begin{pmatrix}
+		1 & l \\
+		0 & 1
+	\end{pmatrix}
+\end{equation*}
+
+Или же второй вариант,  который встречается в литературе:
+\begin{equation*}
+	\left\{
+	\begin{aligned}
+		&\theta_2 = \theta_1 n \\
+		&y_2 = y_1 + (l/n) \theta_1 n
+	\end{aligned}
+	\right.
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	T = \begin{pmatrix}
+		1 & l/n \\
+		0 & 1
+	\end{pmatrix}
+\end{equation*}
+
+\subsubsection*{Матрица преломления на сферической поверхности}
+
+Пусть луч падает из среды с показателем преломления $n_1$ в $n_2$. Запишем условие падения:
+\begin{equation*}
+	n_1 \beta_1 = n_2 \beta_2,
+	\hspace{0.3 cm}
+	\beta_1 = \theta_1 + \alpha,
+	\hspace{0.3 cm}
+	\beta_2 = \theta_2 + \alpha,
+	\hspace{0.3 cm}
+	n_1 (\theta_1 + \alpha) = n_2 (\theta_2 + \alpha),
+	\hspace{0.3 cm}
+	\alpha = y_1/R.
+\end{equation*}
+\begin{equation*}
+	v_2 = v_1 + \dfrac{n_1 - n_2}{R}y_1
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	P= \begin{pmatrix}
+		1 & 0 \\ -\dfrac{n_2 - n_1}{R} & 1
+	\end{pmatrix}
+\end{equation*}
+Или ещё в литературе она может встретиться как:
+\begin{equation*}
+	v_2 = \frac{n_1}{n_2} \theta_1 + \frac{n_1 - n_2}{n_2 R}y_1
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	P =\begin{pmatrix}
+		1 & 0 \\ -\dfrac{n_2 - n_1}{n_2 R} & \dfrac{n_1}{n_2}
+	\end{pmatrix}
+\end{equation*}
+
+\subsubsection*{Общий подход}
+Пусть у нас есть какая-то система, части которой мы знаем как преобразуют луч по отдельности, то есть все матрицы преобразований знаем. Получаем матричное выражение с перемножением матриц:
+\begin{equation*}
+	M_3 M_2 M_1 \vc{a} = \vc{b}
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\vc{a} = M_1^{-1} M_2^{-1}  M_3^{-1} \vc{b} =
+	\begin{pmatrix}
+		A & B \\ C & D
+	\end{pmatrix}.
+\end{equation*}
+По факту теперь имеем и какую-то матрицу в которой очень хочется понять значение её коэффициентов.
+\begin{enumerate}
+	\item  $D = 0$. Означает, что луч у нас идёт в фокальной плоскости.
+	\item $B = 0$. Тогда наша изображение: $y_2 = A y_1$. Так называемые \textit{сопряженные плоскости}. И $A$ называется коэффициентом \textit{поперечного увеличения}.
+	\item $C = 0$. Тогда наша изображение: $y_2 = B \theta_1$. $D$ в этом случае называется коэффициентом. Тако	случай называется телескопическим.
+\end{enumerate}
+
+Перейдём у примерам.
+\subsubsection*{Пример 0}
+Для тонкой линзы с двумя радиусами кривизны -- внешним и внутренним:
+	\begin{equation*}
+		\begin{pmatrix}
+			1 & 0 \\ \dfrac{n-1}{n R_2} & n
+		\end{pmatrix}
+		\begin{pmatrix}
+			1 & 0 \\ \dfrac{1-n}{n R_1} & \dfrac{1}{n}
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			1 & 0 \\ \dfrac{n-1}{n R_2} + \dfrac{1-n}{n R_1} & 1
+		\end{pmatrix}
+	\end{equation*}
+	В левом нижнем углу у нас стоит \textit{оптическая сила системы}: $(n-1) \left(1/R_1 - 1/R_2\right)$.
+
+\subsubsection*{Пример 1}
+\begin{equation*}
+	\begin{pmatrix}
+			1 & b \\ 0 & 1
+	\end{pmatrix}
+	\begin{pmatrix}
+			1 & 0 \\ -\frac{1}{F} & 1
+	\end{pmatrix}
+	\begin{pmatrix}
+			1 & a \\ 0 & 1
+	\end{pmatrix}
+	= 
+	\left(
+\begin{array}{cc}
+ 1-\frac{b}{F} & b+a \left(1-\frac{b}{F}\right) \\
+ -\frac{1}{F} & 1-\frac{a}{F} \\
+\end{array}
+\right)
+\end{equation*}
+Таким образом получаем формулу линзы занулив левый верхний элемент:
+\begin{equation}
+	\frac{1}{a} + \frac{1}{b} = \frac{1}{F}.
+\end{equation}
+
+\subsubsection*{Задача 2 (см) файл}
+Только размер предмета не как в задаче --- а $2$ мм.
+
+Какие матрицы запишем: сначала распространяемся, потом преломляемся, и наконец снова распространяемся.
+\begin{equation*}
+\begin{pmatrix}
+		1 & x/n \\ 0 & 1
+	\end{pmatrix}
+\begin{pmatrix}
+		1 & 0 \\ -0.2 & 1
+	\end{pmatrix}
+	\begin{pmatrix}
+		1 & 15 \\ 0 & 1
+	\end{pmatrix}
+	=
+	\begin{pmatrix}
+		1- \dfrac{x}{7.8} & 15 - \dfrac{x}{0.78} \\ -0.2 & -2
+	\end{pmatrix}
+\end{equation*}
+Снова $B = 0$ и решаем уравнение: $15 - \frac{x}{0.78} = 0$, откуда $x = 11.7$ см.
+Коэффициент увеличение  $A = 1 - \dfrac{11.7}{0.78} = -0.5$.
+
+\subsubsection*{Задача 4 (см) файл}
+Снова думаем --- преломляемся--распространение--преломляемся--распространяемся.
+\begin{equation*}
+	\left(
+\begin{array}{cc}
+ 1 & F \\
+ 0 & 1 \\
+\end{array}
+\right).\left(
+\begin{array}{cc}
+ 1 & 0 \\
+ \dfrac{-(1-n)}{-R} & 1 \\
+\end{array}
+\right).\left(
+\begin{array}{cc}
+ 1 & \dfrac{2 R}{n} \\
+ 0 & 1 \\
+\end{array}
+\right).\left(
+\begin{array}{cc}
+ 1 & 0 \\
+ -\dfrac{n-1}{R} & 1 \\
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+\vphantom{\bigg|}
+ -\dfrac{2 F (n-1)+(n-2) R}{n R} & \dfrac{-n F+2 F+2 R}{n} \\
+ \vphantom{\bigg|}
+ \dfrac{2-2 n}{n R} & \dfrac{2}{n}-1 \\
+\end{array}
+\right)
+\end{equation*}
+И так $A = 0$ значит $- 2 F (n-1) = R (n-2)$, откуда $F = R \frac{2-n}{2 (n-1)}$.
+
+\subsubsection*{Задача 11 (см) файл}
+На самом деле это задача из Овчинкина 1.32.
+\begin{equation*}
+	\left(
+\begin{array}{cc}
+ 1 & 0 \\
+ -\frac{1}{F_1} & 1 \\
+\end{array}
+\right).\left(
+\begin{array}{cc}
+ 1 & l \\
+ 0 & 1 \\
+\end{array}
+\right).\left(
+\begin{array}{cc}
+ 1 & 0 \\
+ -\frac{1}{F_2} & 1 \\
+\end{array}
+\right)
+= 
+\left(
+\begin{array}{cc}
+ 1-\frac{l}{F_2} & l \\
+ -\frac{1-\frac{l}{F_1}}{F_2}-\frac{1}{F_1} & 1-\frac{l}{F_1} \\
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+ 1-l P_2 & l \\
+ -P_1-\left(1-l P_1\right) P_2 & 1-l P_1 \\
+\end{array}
+\right).
+\end{equation*}
+
+Про увеличения: 
+\begin{equation*}
+	\frac{d}{d n}( (n-1)(G_1 + G_2)	- (n-1)^2 l G_1 G_2) = 0
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	(G_1 + G_2)	- 2 (n-1) l G_1 G_2 = 0
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	l = \frac{1}{2 (n-1)} \left(\frac{1}{G_1} + \frac{1}{G_2}\right)
+\end{equation*}
+Или же
+\begin{equation*}
+	l = \frac{1}{2}\left(\frac{1}{(n-1)G_1} + \frac{1}{(n-1)G_2}\right) = \frac{F_1 + F_2}{2}.
+\end{equation*}
