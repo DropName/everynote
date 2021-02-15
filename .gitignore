@@ -1,0 +1,13 @@
+*.aux
+
+*.out
+
+*.gz
+
+*.sublime-workspace
+
+*.log
+
+*.toc
+
+*.nav
