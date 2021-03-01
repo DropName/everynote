@@ -1,0 +1,154 @@
+ \subsection*{Оптика пучков}
+ Что у нас есть. У нас есть волновое уравнение!
+ \begin{equation*}
+ 	\nabla^2 E - \frac{\varepsilon \mu}{c^2} \frac{\partial^2 E}{\partial t^2} = 0.
+ \end{equation*}
+ Получаем уравнение Гельмгольца:
+ \begin{equation*}
+ 	\nabla^2 f e^{- i \omega t} - \frac{\varepsilon \mu}{c^2} (-1) \omega^2 f e^{-i \omega t} = 0
+ 	\hspace{0.5 cm}
+ 	\Rightarrow
+ 	\hspace{0.5 cm}
+ 	\nabla^2 f + \varepsilon \frac{\omega^2}{c^2} f = 0.
+ \end{equation*}
+ Таким образом:
+ \begin{equation}
+ 	\nabla^2 f + \varepsilon k_0^2 f = 0
+ 	\label{helmgoltz}
+ \end{equation}
+
+ Если рассматривать полну идущую от точечного источника, то вблизи мы будет ее считать \textit{сферической} чуть дальше --- \textit{параболической}, и совсем далеко --- \textit{плоской}.  
+
+ Выберем ось $z$ на которой поместим точечный источник.
+Теперь $f = \frac{A}{r} \exp(i k r)$.
+
+На расстоянии $\rho$ от оси точка на волновом фронте лежит на $r^2 = \rho^2 + z^2$. Приблизительно в предположении $z \gg \rho$: $r \approx z + \frac{\rho^2}{2 z}$.
+То есть в порядке малости выпишем:
+\begin{equation*}
+	\encircled{1} \, r \simeq z,
+	\hspace{1 cm}
+	\encircled{2} \, r \simeq \frac{2 \pi}{\lambda} (z + \frac{\rho^2}{2 z} + \ldots) = \frac{2\pi}{\lambda}z + \frac{2 \pi}{\lambda} \frac{\rho^2}{2 z}.
+\end{equation*}
+Второй вот порядок и называют параболическим: $f = \frac{A}{z} \exp(i k z + i k \frac{\rho^2}{2 z})$.
+
+\subsection*{Параксиальное приближение}
+Имеем ситуацию: $f (\vc{r}) = A (\vc{r}) \exp(i k z)$. Будем требовать:
+\begin{equation*}
+	\frac{\partial A}{\partial z}\lambda \ll A 
+	\hspace{0.3 cm}
+	\Rightarrow
+	\hspace{0.3 cm}
+	\frac{\partial A}{\partial z} \ll \frac{A}{\lambda}
+	\hspace{0.3 cm}
+	\Rightarrow
+	\hspace{0.3 cm}
+	\frac{\partial A}{\partial z} \ll A \cdot k.
+\end{equation*}
+\begin{equation*}
+	\frac{\partial^2 A}{\partial z^2}\lambda \ll \frac{\partial A}{\partial z} 
+	\hspace{0.3 cm}
+	\Rightarrow
+	\hspace{0.3 cm}
+	\frac{\partial^2 A}{\partial z^2} \ll \frac{\partial A}{\partial z} \cdot k.
+\end{equation*}
+И так волновое уравнение, с заменой $k^2 = \varepsilon \omega^2/c^2$:
+\begin{equation*}
+	\nabla^2 f + k^2 f  = 0,
+	\hspace{0.5 cm}
+	\hspace{0.5 cm}
+	\frac{\partial f}{\partial z} = \frac{\partial A}{\partial z} e^{i k z} + A \cdot i k e^{i k z},
+	\hspace{0.5 cm}
+	\hspace{0.5 cm}
+	\frac{\partial^2 f}{\partial z^2} = \frac{\partial^2 A}{\partial z^2} e^{i k z} + 2 A_z' i k e^{i k z} - A k^2 e^{i k z}.
+\end{equation*}
+Теперь всё это в волновое уравнение:
+\begin{equation*}
+	\frac{\partial^2 A}{\partial z^2} + 2 \frac{\partial A}{\partial z} i k - A k^2 + \nabla^2 A + A k^2 = 0
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\frac{\partial^2 A}{\partial z^2} + 2 \frac{\partial A}{\partial z} i k + \nabla^2 A  = 0.
+\end{equation*}
+И с нашем приближение получаем \textit{параксиальное уравнение Гельмгольца} (может мы где-то знак потеряли).
+\begin{equation}
+ 	\nabla^2 A + 2 i k \frac{\partial A}{\partial z} = 0.
+ 	\label{parax_helm}
+ \end{equation}
+ Надо проверить, подставится будет ли решением уравнения сверху выражение:
+ \begin{equation*}
+ 	f (r) = \frac{A}{z} \exp\left(-i k z - i k \frac{\rho^2}{2 z}\right)
+ 	\hspace{0.5 cm}
+ 	\Rightarrow
+ 	\hspace{0.5 cm}
+ 	f(r) = A(r) e^{- i k z},
+ 	\hspace{0.3 cm}
+ 	\hspace{0.3 cm}
+ 	A(r) = \frac{A}{z} \exp\left(-i k \frac{\rho^2}{2 z}\right).
+ \end{equation*}
+ Решение таким образом при таким $f$.	
+ \begin{equation*}
+ 	f (r) = \frac{A}{z + i z_0} \exp\left(-i k z - i k \frac{\rho^2}{2 (z + i z_0)}\right)
+ 	\hspace{0.5 cm}
+ 	\hspace{0.5 cm}
+ 	z \longrightarrow q(z) = z + i z_0.
+ \end{equation*}
+ Тут введен $q$-параметр и \textit{Рэлеевская длина} --- $z_0$.
+
+ Мы знаем, что  $\frac{1}{q(z)} = \frac{1}{z + i z_0} = \frac{z - i z_0}{z^2 + z_0^2}$. Подставляем:
+ \begin{equation*}
+ 	f (r) = A \left(\frac{z}{z^2 + z_0^2} - i\frac{z_0}{z^2 + z_0^2}\right) \exp\left(- i k z - i k \frac{\rho^2}{2}\frac{z - i z_0}{z^2 + z_0^2}\right).
+ \end{equation*}
+ \begin{equation*}
+ 	f (r) = A \left(\frac{z}{z^2 + z_0^2} - i\frac{z_0}{z^2 + z_0^2}\right)
+ 	\exp \left( - \frac{k \rho^2}{2} \frac{z_0}{z^2 + z_0^2}\right)
+ 	\exp\left(- i k z - i k \frac{\rho^2 z_0}{z^2 + z_0^2}\right).
+ \end{equation*}
+Выпишем:	
+\begin{equation*}
+	- \frac{2 \pi}{2} \frac{ \rho^2 z_0}{\lambda (z^2 + z_0^2)} = i \frac{\rho^2}{\frac{\lambda}{z_0 \pi} (z^2 + z_0^2)}
+	\hspace{1 cm}
+	\text{обозначим: }
+	W^2(z) = \frac{\lambda z_0}{\pi} (1 + \frac{z^2}{z_0^2}),
+	\hspace{0.5 cm}
+	R(z) = z(1 + \frac{z^2}{z_0^2}).
+\end{equation*}
+Тогда получаем:
+\begin{equation*}
+	f(r) = A \left(\frac{1}{R(z)} - i \frac{\lambda}{\pi W^2(z)}\right) \exp(- \frac{\rho^2}{W^2(z)}) \exp\left(- i k z - i k \frac{\rho^2}{2 R(z)}\right).
+\end{equation*}
+\begin{equation*}
+	f(r) = \frac{A}{i z} \frac{W_0}{W(z)} \exp\left(-\frac{\rho^2}{W^2(z)}\right) 
+	\exp\left(- i k z - i k \frac{\rho^2}{2 R(z)} + i \xi(z) \right),
+\end{equation*}
+где $W_0 = W(0)$, а $\xi(z) = \arctan\frac{z}{z_0}$. Обычно в первом члене ещё обозначают $A_0 = A/i z_0$.
+
+\subsubsection*{Интенсивность}
+\begin{equation*}
+	I = <|\vc{S}|>_t = <\frac{c}{4 \pi} \sqrt{\varepsilon} E^2> = \frac{c n}{4 \pi}<E^2> = \frac{c n}{8 \pi} E_0^2.
+\end{equation*}
+И для всех будет прекрасней, для всех будет полезней не таскать коэффициент:
+\begin{equation*}
+	I \propto E_0^2 \hspace{0.5 cm} I \propto E^2 \hspace{0.5 cm} 
+	I = E^2 \left[\frac{\text{B}^2}{\text{м}^2}\right],
+\end{equation*}
+сокращать на размерный коэффициент очень круто, поэтому запомним, что размерность $[I] = \frac{\text{Дж}}{\text{c cm}}$.
+
+Таким образом со всеми предположениями:
+\begin{equation*}
+	I = A_0^2 \frac{W_0^2}{W^2(z)} \exp\left(- \frac{2 \rho^2}{W^2(z)}\right).
+\end{equation*}
+Это называется \textit{Гаусовой интенсивностью}. Читатель может построить её самостоятельно.
+
+\subsubsection*{Мощность}
+\begin{equation*}
+	P = \int_0^\infty I(\rho) 2 \pi \rho d \rho = \frac{1}{2} I_0 (\pi W_0^2).
+\end{equation*}
+И в построенном читателями графике в предыдущем пункте если посмотреть на ширину полосы под распределением, то можно заметить, что $\rho_0 = W(z)$, в связи с чем $W(z)$ называют \textit{радиусом пучка}.
+
+Посмотрим, что у нас с нашим радиусом творится:
+\begin{equation*}
+	W(z) = \sqrt{\frac{\lambda z_0}{\pi} \left(1 + \frac{z^2}{z_0^2}\right)},
+\end{equation*}
+если пытливый читатель построить и этот график, то он (график) пересечет $z =0$ в $W(0) = W_0 = \sqrt{\frac{\lambda z_0}{\pi}}$. Aсимптотически он будет стремиться к прямой с коэффициентом наклона: $\theta \approx \sqrt{\frac{\lambda}{\pi z_0}} = \frac{W_0}{z_0}$.
+
+Для примера если взять лазер $\lambda_0 = 633$ нм, с $2W_0 = 2$ см, то \textit{глубина резкости} будет: $2 z_0 = 1$ км. Если же $2W_0 = 2$ мкм, то уже всё будет потоньше: $2z_0 = 1$ нм.
