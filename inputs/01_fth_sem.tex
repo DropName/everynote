@@ -1,0 +1,60 @@
+\subsubsection{Про мультипольное разложение}
+Берем вторую пару уравнений Максвелла
+\begin{equation*}
+	\partial_\mu F^{\nu \mu} = - \frac{4 \pi }{c} J^\nu,
+	\hspace{1 cm}
+	\partial_\mu \tilde{F}^{\nu\mu} = 0.
+\end{equation*}
+Перепишем в терминах векторного потенциала поля:
+\begin{equation*}
+	\partial_\mu \left(\partial^\nu A^\mu - \partial^\mu A^\nu\right) = -\frac{4 \pi}{c} J^\nu
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\partial^\nu \partial_\mu  A^\mu - \partial_\mu \partial^\mu A^\nu = -\frac{4 \pi}{c} J^\nu
+\end{equation*}
+Воспользуемся калибровкой Лоренца, то есть $\partial_\mu A^\nu = 0$. Тогда наши уравнение становится супер приятным, запишем его через оператор Даламбера:
+\begin{equation*}
+ 	\partial_\mu \partial^\mu = \square = \frac{1}{c^2}\frac{\partial^2}{\partial t^2} - \triangle.
+ \end{equation*} 
+ Помня, что $J^\nu = (c \rho, \vc{J})$, получаем:
+ \begin{equation*}
+ 	\square \varphi = 4 \pi \rho
+ 	\hspace{1 cm}
+ 	\square \vc{A} = \frac{4 \pi}{c} \vc{J}
+ \end{equation*}
+
+Если мы говорим про электростатику, то $\rho \neq f(t)$, тогда получаем уравнение Лапласа:
+\begin{equation*}
+	\triangle \varphi = - 4 \pi \rho.
+\end{equation*}
+Решать будем с помощью функции Грина, для лапласиана и даламбертиана соответственно:
+\begin{equation*}
+	G(\vc{r}, \vc{r}') = \frac{-1}{4 \pi |\vc{r} - \vc{r}'|},
+	\hspace{1.5 cm}
+	G(\vc{r},t, \vc{r}',t') = \frac{\delta \left(t - t' - \frac{|\vc{r} - \vc{r}'|}{c}\right)}{4 \pi |\vc{r} - \vc{r}'|} 
+\end{equation*}
+\begin{equation}
+	\varphi(x) = \int G(x, x') f(x') d x'
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	\varphi(\vc{r}) = \int \frac{\rho (\vc{r}')}{|\vc{r} - \vc{r}'|}d^3 r'
+	= \frac{Q}{r} + \frac{\vc{d} \vc{r}}{r^3} + \frac{r_\alpha r_\beta D_{\alpha\beta}}{2 r^5} + \ldots
+	\label{potential}
+\end{equation}
+Здесь введено очень удобное обозначение: 
+\begin{equation*}
+	\vc{d} = \int_V \rho(\vc{r})\vc{r} d^3 r \text{ --- дипольный момент.}
+\end{equation*}
+\begin{equation*}
+	\vc{D}_{\alpha\beta} = \int \rho(r) (3 r_\alpha r_\beta - r^2 \delta_{\alpha\beta})d^3 r \text{ --- квадрупольный момент.}
+\end{equation*}
+Соответственно, не в нашей задаче, но в магнитостатике, аналогично:
+\begin{equation*}
+	\vc{A}(\vc{r}) = \int \frac{\vc{L}(\vc{r}')}{c |\vc{r} - \vc{r}'|} d^3 \vc{r}'
+\end{equation*}
+Проведя определенные выкладки можно получить интенсивность излучения системы зарядов в общем случае:
+\begin{equation*}
+	I = \frac{2 |\vc{\ddot{d}}|^2}{3 c^3} + \frac{2|\vc{\ddot{\mu}}|^2}{3 c^3} + \frac{\dddot{D}_{\alpha\beta} \dddot{D}_{\alpha\beta}}{180 c^5} + \ldots 
+\end{equation*}
