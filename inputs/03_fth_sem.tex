@@ -1,0 +1,114 @@
+Вспоминаем, что было \eqref{dalamber}. Таким образом у нас есть $\rho(t)$  и $\vc{J}(t)$. Разложим соответствующие потенциалы (компоненты четыре-потенциала):
+\begin{equation*}
+	\varphi(\vc{r},t) = \int \frac{\rho\left(\vc{r}' , t - \frac{|\vc{r} - \vc{r}'|}{c}\right)}{|\vc{r} - \vc{r}'|} d^3 \vc{r}',
+	\hspace{1cm}
+	\vc{A}(\vc{r},t) = \int \frac{\vc{J}\left(\vc{r}' , t - \frac{|\vc{r} - \vc{r}'|}{c}\right)}{c|\vc{r} - \vc{r}'|} d^3 \vc{r}'.
+\end{equation*}
+Сразу идём в нулевое приближение:
+\begin{equation*}
+	\vc{A}(\vc{r},t) = \int \frac{\vc{J}\left(\vc{r}' , t - \frac{r}{c}\right)}{c r} d^3 \vc{r}'
+	=
+	\frac{1}{r c} \sum_a e_a \vc{v}_a = \frac{1}{rc} \sum_a e_a \vc{\dot{r}}_a = \frac{1}{rc} \frac{d}{d t} \left(\sum_a e_a r_a\right)
+	= \frac{\vc{\dot{d}} \left(t - \frac{r}{c}\right)}{c r}.
+\end{equation*}
+Воспользуемся калибровкой Лоренца:
+\begin{equation*}
+	\frac{1}{c} \frac{\partial \varphi}{\partial t} + \div \vc{A} = 0
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\frac{\partial \varphi}{\partial t} = - c \div \vc{A}.
+\end{equation*}
+Далее, собственно приходим к напряженностям:
+\begin{equation*}
+	\vc{E} = - \grad \varphi - \frac{1}{c} \frac{\partial \vc{A}}{\partial t}
+	\hspace{0.5 cm}
+	\vc{H} = \rot \vc{A}.
+\end{equation*}
+Дифференцируем:
+\begin{equation*}
+	\vc{E} = \frac{3 \vc{n} (\vc{n} \vc{d}) - \vc{d}}{r^3} + \frac{\vc{n} (\vc{n} \vc{d}) - \vc{\dot{d}}}{c r^2} + \frac{\vc{n} (\vc{n} \vc{\dot{d}}) - \vc{\ddot{d}}}{c^2 r},
+	\hspace{0.5 cm}
+	\vc{H} = \frac{[\vc{n} \times \vc{\dot{d}}]}{c r^2} + \frac{[\vc{n} \times \vc{\ddot{d}}]}{c^2 r}.
+\end{equation*}
+Если у нас $\vc{d} = \vc{d}_0 \cos (\omega t)$, то при дифференцировании у нас там вылезет волновой вектор $k = \omega/c$.
+Далее будем работать в приближении $k r \gg 1$ -- так называемая волновая зона.
+Таким образом умеем:
+\begin{equation*}
+	\vc{H} = \frac{[\vc{n} \times \vc{\ddot{d}}]}{c^2 r}
+	\hspace{1 cm}
+	\vc{E} = \frac{\vc{n} (\vc{n} \vc{\ddot{d}}) - \vc{\ddot{d}}}{c^2 r}.
+\end{equation*}
+Покажем, что $\vc{E} \perp \vc{H} \perp \vc{n}$:
+\begin{equation*}
+	(\vc{n} \vc{H}) = \frac{1 }{c^2 r} (\vc{n} [\vc{n} \times \vc{\ddot{d}}]) = 0,
+	\hspace{1 cm}
+	(\vc{n} \vc{E}) = \frac{1}{c^2 r} [(\vc{n} \vc{n}) (\vc{n} \vc{\ddot{d}}) - (\vc{n} \vc{\ddot{d}})] = 0,
+\end{equation*}
+\begin{equation*}
+	[\vc{n} \times \vc{H}] = \frac{1}{c^2 r} [\vc{n} \times[\vc{n} \times \vc{\ddot{d}}]] = \frac{1}{c^2 r} [ \vc{n} (\vc{n} \vc{\ddot{d}}) - \vc{\ddot{d}} (\vc{n} \vc{n})] = \vc{E}.
+\end{equation*}
+Для Пойтинга:
+\begin{equation*}
+	\vc{S} = \frac{c}{4 \pi} [\vc{E} \times \vc{H}] = \frac{c}{4 \pi} [ [\vc{H} \times \vc{n}] \times \vc{H}] = -\frac{c}{4 \pi} (\vc{H} (\vc{n} \vc{H}) - \vc{n} |\vc{H}|^2) = \frac{c}{4 \pi} |\vc{H}|^2 \vc{n} = \frac{c}{4 \pi} |\vc{E}|^2 \vc{n}.
+\end{equation*}
+Тогда интенсивность излучения от точечного источника через поверхность, видимую под телесным углом $d \Omega$: 
+\begin{equation*}
+	d I = R^2 d \Omega \vc{n} \vc{S} = \frac{c R^2}{4 \pi} |\vc{H}|^2 d \Omega.	
+\end{equation*}
+
+
+\subsubsection*{Задача 15}
+Пусть есть плоскость $Oxz$, и диполь направлен под углом $\theta_d$ к оси $Oz$.
+Воспользуемся методом изображений и зеркально под проводящей плоскостью $Oxy$расположим второй диполь, заменяющий её.
+\begin{equation*}
+	\vc{d}_1 = d (\vc{e}_z\cos \theta_d + \vc{e} \sin \theta_d),
+	\hspace{1 cm}
+	\vc{d}_2 = d (\vc{e}_z \cos \theta_d  - \vc{e}_x \sin \theta_d).
+\end{equation*}
+Здесь введены единичные векторы, и также ещё введём на будущее $\vc{r}$ вектор на точку наблюдения из середины координат, $\vc{n}$ -- единичный по этому направлению.
+\begin{equation*}
+	\vc{r}_1 = \vc{r} - L \vc{e}_z,
+	\hspace{1 cm}
+	\vc{r}_2 = \vc{r} + L \vc{e}_z.
+\end{equation*}
+Тут $2L$ -- расстояние между диполями, будем работать в приближении $r \gg L$. Тогда примерно $\vc{r}_1 \parallel \vc{r}_2 \parallel \vc{n}$. 
+И соответственно $r = (\vc{r} \vc{n})$, а остальные: \begin{equation*}
+	r_1 = (\vc{r}_1 \vc{n}) = r - L (\vc{e}_z \vc{n}),
+	\hspace{1 cm}
+	r_2 = (\vc{r}_2 \vc{n}) = r + L (\vc{e}_z \vc{n}).
+\end{equation*}
+И для $d_{1,2} (t - \frac{r_{1,2}}{c})$
+\begin{equation*}
+	\vc{d}_1 = d (\vc{e}_z\cos \theta_d + \vc{e} \sin \theta_d) \cos (\omega t - k r_1),
+	\hspace{1 cm}
+	\vc{d}_2 = d (\vc{e}_z \cos \theta_d  - \vc{e}_x \sin \theta_d) \cos (\omega t - k r_2),
+\end{equation*}
+колеблеющегося гармонически (по условию):
+\begin{equation*}
+	\vc{H} = \frac{[\vc{\ddot{d}}_1 \times \vc{n}]}{c^2 r_1} + \frac{\vc{\ddot{d}}_2 \times \vc{n}}{c^2 r_2}
+	=
+	\frac{- \omega^2 d}{c^2 r} \left(( [\vc{e}_z \times \vc{n}] \cos \theta_d 
+	+ [\vc{e}_x \times \vc{n}] \sin \theta_d) \cos(\omega t - \frac{\omega}{c}r_1)
+	+
+( [\vc{e}_z \times \vc{n}] \cos \theta_d 
+	+ [\vc{e}_x \times \vc{n}] \sin \theta_d) \cos(\omega t - \frac{\omega}{c}r_2)
+	\right).
+\end{equation*}
+Очень хочется упростить: 
+\begin{equation*}
+	\cos(\omega t - k r_1) = \cos (\omega t - k r + k L (\vc{e}_z \vc{n}))
+	=
+	\cos(\omega t - k r) cos (k L (\vc{e}_z \vc{n}))	- \sin (\omega t - k r) \sin (k L (\vc{e}_z \vc{n})).
+\end{equation*}
+\begin{equation*}
+	\cos(\omega t - k r_2) = \cos (\omega t - k r - k L (\vc{e}_z \vc{n}))
+	=
+	\cos(\omega t - k r) cos (k L (\vc{e}_z \vc{n})) + \sin (\omega t - k r) \sin (k L (\vc{e}_z \vc{n})).
+\end{equation*}
+Тогда возвращаемся к выражению для $H$:
+\begin{equation*}
+	\vc{H} = \frac{-2 \omega^2 d}{c^2 r} \left([\vc{e}_z \times \vc{n}] \cos \theta_d \cos (\omega t - k r) \cos (k L (\vc{e}_z \vc{n})\right)
+	-
+	[\vc{e}_x \times \vc{n}] \sin \theta_d \sin (\omega t - k r) \sin (k L (\vc{e}_z \vc{n}))).
+\end{equation*}

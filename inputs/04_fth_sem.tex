@@ -1,0 +1,172 @@
+Продолжаем решать задачу...
+
+Имея выражение для вектора Пойтинга, как было показано выше:
+\begin{equation*}
+	\vc{S} = \frac{c}{4 \pi} [\vc{E} \times \vc{H}] = \frac{c}{4 \pi} |\vc{H}|^2 \vc{n},
+	\hspace{1 cm}
+	d I = r^2 \vc{S} \vc{n} d \Omega.
+\end{equation*}
+Усредняя по периоду: 
+\begin{equation*}
+	\frac{1}{T} \int_0^T f(t) d t
+	\hspace{0.5 cm}
+	 \Rightarrow
+	 \hspace{0.5 cm}
+	\frac{1}{T} \int_0^T \cos^2 (\omega t - kz) d t = \frac{1}{2}. 
+\end{equation*}
+Таким образом усреднением для вектора Пойтинга мы получаем:
+\begin{equation*}
+	\vc{S} = \frac{c}{4 \pi} \frac{2 \omega^4 d^2}{c^4 r^2} \left(
+	|[\vc{e}_z \times \vc{n}]|^2 \cos^2 \theta_d cos^2 (k L (\vc{e}_z \cdot \vc{n}))
+	+
+	|[\vc{e}_x \times \vc{n}]|^2 \sin^2 \theta_d \sin^2 (k L (\vc{e}_z \cdot \vc{n}))
+	\right) \vc{n}.
+\end{equation*}
+Соответственно для интенсивности излучения получаем:
+\begin{equation*}
+	d I = \frac{\omega^4 d^2}{2\pi c^3} \left(
+	|[\vc{e}_z \times \vc{n}]|^2 \cos^2 \theta_d cos^2 (k L (\vc{e}_z \cdot \vc{n}))
+	+
+	|[\vc{e}_x \times \vc{n}]|^2 \sin^2 \theta_d \sin^2 (k L (\vc{e}_z \cdot \vc{n}))
+	\right) d \Omega.
+\end{equation*}
+В задаче на это интегрировать не просим, нам достаточно просто посмотреть предельные случаи:
+\begin{itemize}
+	\item $L \ll \lambda$, тогда получаем: $d I \simeq \frac{\omega^4 d^2}{2 \pi c^3} |[\vc{e}_z \times \vc{n}]|^2 \cos^2 \theta_d d \Omega$.
+	\begin{equation*}
+		I = \int d I = \int_0^{2\pi} \int_{0}^{\pi/2}
+		\frac{\omega^4 d^2}{2 \pi c^3} |[\vc{e}_z \times \vc{n}]|^2  sin^2 \theta \cos^2 \theta_d \sin \theta d \theta d\varphi 
+		= 
+		\frac{- \omega^4 d^2}{c^3} \cos^2 \theta_d \int_{0}^{\pi/2} \sin^2 \theta d\cos \theta =  \frac{2}{3}\frac{\omega^4 d^2}{c^3} \cos^2 \theta_d.
+	\end{equation*}
+	После усреднения получим: \begin{equation*}
+		\langle I \rangle = \frac{2 |\ddot{d}|^2}{3 c^3} = \frac{\omega^4 d^2}{3 c^3}.
+	\end{equation*}
+	\item Теперь $L \gg \lambda$, тогда
+	\begin{equation*}
+		I = \int d I = \int_0^{2 \pi} \int_0^{\pi/2}
+		\frac{\omega^4 d^2}{2 \pi c^3} \sin^2 \theta \cos^2 (k L \cos \theta) \sin \theta d \theta d \varphi
+		= \frac{\omega^4 d^2}{c^3} \int_0^1 (1- x^2)cos^2(k L x) d x = \frac{\omega^4 d^2}{3 c^3}.
+	\end{equation*}
+\end{itemize}
+
+\subsubsection*{Задача 16}
+Значит есть разноименные заряды, один будем характеризовать индексами "1", а другой "2".
+Будем работать в системе центра инерции:
+\begin{equation*}
+	\vc{R} = \frac{m_1 \vc{r}_1 + m_2 \vc{r}_2}{m_1 + m_2},
+	 \ \vc{r} = \vc{r}_2 - \vc{r}_1
+	\hspace{0.5 cm}
+	\leadsto
+	\hspace{0.5 cm}
+	\vc{R}_{\text{центра инерции}} = 0.
+\end{equation*}
+Тогда не сложно вычислить:
+\begin{equation*}
+	\vc{r}_1 = - \frac{m_2}{m_1} \vc{r}_2,
+	\
+	\vc{r}_2 = \frac{m_1}{m_1 + m_2} \vc{r},
+	\
+	\vc{r} = \vc{r}_2 (1 + \frac{m_2}{m_1}),
+	\
+	\vc{r}_1 = - \frac{m_2}{m_1 + m_2} \vc{r}.
+\end{equation*}
+Ну и как мы показывали для излучения диполя: $I =2 
+|\vc{\ddot{d}}|^2/(3 c^3)$.
+В нашем случае:
+\begin{equation*}
+	\vc{d} = e_1 \vc{r}_1 + e_2 \vc{r}_2 = \left(\frac{e_2 m_1 - e_1 m_2}{m_1 + m_2}\right) \vc{r} = q \vc{r}
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	I = \frac{2 q^2 \vc{\ddot{r}}^2}{3 c^3}.
+\end{equation*}
+Введем $\mu = \frac{m_1 m_2}{m_1 + m_2}$. Посмотрим на энергию, излучаемую за один период:
+\begin{equation*}
+	\delta \varepsilon = I \cdot T_{\text{период}} = I \frac{2 \pi r}{v}.
+\end{equation*}
+Будем работать в предположении, что $\delta \varepsilon \ll \varepsilon$. Воспользуемся теоремой Вириала:
+\begin{equation*}
+	2 \langle T \rangle = n \langle u \rangle,
+	\
+	T = \frac{\mu v^2}{2},
+	\
+	\mu v^2 = -\frac{e_1 e_2}{r}
+	\hspace{0.5 cm}
+	\leadsto
+	\hspace{0.5 cm}
+	u = \frac{e_1 e_2}{r}.
+\end{equation*}
+Таким образом $v = \sqrt{|e_1 e_2|/\mu^2}$, тогда опять к энергии:
+\begin{equation*}
+	\delta \varepsilon = \frac{2 q^2 \ddot{r}^2}{3 c^3} \frac{\pi r^{3/2} \mu^{1/2}}{|e_1 e_2|^{1/2}}
+	=
+	\frac{2 q^2}{3 c^3} \frac{|e_1 e_2|^{3/2}}{\mu^{3/2} r^{5/2}}\pi 
+	=
+	\frac{|e_1 e_2}{2 r} \frac{4 \pi q^2}{3 |e_1 e_2|} 
+	\underbrace{\frac{|e_1 e_2|^{3/2}}{c^3 \mu^{3/2} r^{3/2}}}_{(v/c)^3}
+	=
+	\varepsilon\left(\frac{v}{c}\right)^3 \frac{4 \pi q^2}{3 |e_1 e_2|} \ll \varepsilon.
+\end{equation*}
+
+Теперь на интересует $r(t)$. Знаем, что $\varepsilon = \frac{e_1 e_2}{2 r}$.
+\begin{equation*}
+	I = - \frac{d \varepsilon}{d t} = - \frac{d \varepsilon}{ d r} \frac{d r}{d t}
+	=
+	\frac{e_1 e_2}{2 r^2} \dot{r} = \frac{2 q^2 \ddot{r}^2}{3 c^3},
+\end{equation*}
+подставляем сюда Кулона $\mu \ddot{r} = \frac{e_1 e_2}{r^2}$, а он выполняется, так как за один оборот не очень много энергии теряется:
+\begin{equation*}
+	\frac{e_1 e_2}{2 r^2} \dot{r} = \frac{2 q^2 (e_1 e_2)^2}{3 c^3 \mu^2 r^4}
+	\hspace{0.5 cm}
+	\leadsto
+	\hspace{0.5 cm}
+	r^2 \dot{r} = \frac{4 q^2 (e_1 e_2}{3 c^3 \mu^2} = \frac{1}{3} \frac{d r^3}{d t}.
+\end{equation*}
+Не сложно тогда получается:
+\begin{equation*}
+	r = \left(r_0^3 + \frac{4 \theta^2 (e_1 e_2)}{c^3 \mu^2} t\right)^{1/3},
+	\hspace{1 cm}
+	t_{\text{пад}} = \frac{r_0^3 \mu^2 c^3}{4 q^2 (e_1 e_2)}.
+\end{equation*}
+Для атома время падения электрона на него $t \sim 10^{-8}$ секунды, и действительно в классической теории поля атомы с электронами стабильно существовать не могут.
+
+\subsubsection*{Задача 17}
+Два заряда у нас сталкиваются, излучают и летят обратно, нас интересует процесс излучения. Будем считать, что $v \ll c$.
+Воспользуемся выведенной формулой $I = 2 |\vc{\ddot{d}}|^2/3(c^3)$.
+И всё так же живём в системе центра инерции, как в прошлой задаче.
+\begin{equation*}
+	\vc{d} = e_1 \vc{r}_1 + e_2 \vc{r}_2 = \left(\frac{e_2 m_1 - e_1 m_2}{m_1 + m_2}\right) \vc{r} = q \vc{r}.
+\end{equation*}
+
+Давайте рассмотрим случай, когда $e_2 m_1 \neq e_1 m_2$. Тогда у нас не появляется лишних нулей, $I = \frac{ 2 q^2 \vc{\ddot{r}}^2}{e c^3}$. И, собственно, для энергии имеем:
+\begin{equation*}
+	\varepsilon = \int_{-\infty}^{\infty} I(t) dt = \frac{2 q^2}{3 c^3} \int_{-\infty}^{\infty} \ddot{r}^2 d t
+	=
+	\frac{2 q^2}{3 c^3} \int_{v_{-\infty}}^{v_{\infty}} \ddot{r} d \dot{r}
+\end{equation*}
+Опять, работая с предположением: $\varepsilon_{\text{изл}}\ll \varepsilon_{\text{полная}}$, воспользуемся законом кулона. Ещё нам, для выражения скорости понадобится закон сохранения энергии:
+\begin{equation*}
+	\frac{\mu v^2_\infty}{2} = \frac{\mu v^2}{2} + \frac{e_1 e_2}{r}
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	\frac{(e_1 e_2)^2}{r^2} = \frac{\mu^2}{4} (v_\infty^2 - v^2)^2,
+\end{equation*}
+что при подстановке в закон Кулона:
+\begin{equation*}
+	\ddot{r} = \frac{e_1 e_2}{\mu r^2} = \frac{(e_1 e_2)^2}{r^2} \frac{1}{\mu (e_1 e_2)}
+	=
+	\frac{\mu}{4 (e_1 e_2)} (v_\infty^2 - v^2)^2.
+\end{equation*}
+Теперь мы готовы взять наш интеграл:
+\begin{equation*}
+	\varepsilon = \frac{q^2 \mu}{6 c^3 (e_1 e_2)} \int_{- v_\infty}^{v_\infty} (v_\infty^2 - v^2) d v
+	=
+	\frac{\mu q^2}{6 c^3 (e_1 e_2)} \left(v_\infty^4 v - \frac{2 v^{3}}{3} v_\infty^2 + \frac{v^5}{5}\right) \bigg|_{-v_\infty}^{v_\infty}
+	=
+	\frac{8 \mu q^2}{45 c^3 (e_1 e_2)} v_\infty^5
+	=
+	\left(\frac{\mu v_\infty^2}{2}\right) \left(\frac{v_\infty}{c}\right)^3 \frac{16 q^2}{45 (e_1 e_2)}
+	\ll \frac{\mu v_\infty^2}{2}.
+\end{equation*}
