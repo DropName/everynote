@@ -1,0 +1,182 @@
+Теперь рассмотрим второй случай:
+\begin{equation*}
+	Q = 0, \ e_2 m_1 = e_1 m_2
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	I = \frac{2 |\ddot{\vc{d}}|^2}{3 c^3} + \frac{2 |\ddot{\vc{\mu}}|^2}{3 c^3} + \frac{\dddot{D}_{\alpha\beta} \dddot{D}_{\alpha\beta}}{180 c^5} + \ldots
+\end{equation*}
+То есть:
+\begin{equation*}
+	\vc{\mu} = \sum_{j = 1}^2 \frac{e_j}{c}[\vc{r}_j \times \vc{v}_j] = 0
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	\vc{r}_j \parallel \vc{v}_j.
+\end{equation*}
+\begin{equation*}
+	D_{\alpha\beta} = e_1 (3 r_\alpha^{(1)} r_\beta^{(1)} - \delta_{\alpha\beta} (r^{(1)})^2) + e_2 (3 r_\alpha^{(2)} r_\beta^{(2)} - \delta_{\alpha\beta} (r^{(2)})^2).
+\end{equation*}
+По компонентам:
+\begin{equation*}
+	D_{xy} = (3 x y - \delta_{1 2} r^2) = 0,
+	\hspace{0.5 cm}
+	D_{x z} = 0,
+	\hspace{0.5 cm}
+	D_{y z} = 0
+\end{equation*}
+\begin{equation*}
+	D_{xx} = e_1 (3 r_1^2 - r_1^2) + e_2 (3 r_2^2 - r_2^2)
+	=
+	\frac{2 (e_1 m_2^2 + e_2 m_1^2)}{(m_1 + m_2)^2} r^2 = 2 q r^2.
+\end{equation*}
+Оставшиеся просто:
+\begin{equation*}
+	D_{xx} + D_{yy} + D_{zz} = 0
+	\hspace{1 cm}
+	\Rightarrow
+	\hspace{1 cm}
+	D_{yy} = D_{zz} = - \frac{D_{xx}}{2} = - q r^2.
+\end{equation*}
+Тогда в интенсивность подставим третьи производные этой красоты:
+\begin{equation*}
+	I = \frac{\dddot{D}_{\alpha\beta}\dddot{D}_{\alpha\beta}}{180 c^5}
+	=
+	\frac{6 q^2 (\dddot{r^2})^2}{180 c^5}
+\end{equation*}
+Хочется что-то сделать с этой третьей производной, ну что ж, попробуем:
+\begin{equation*}
+	\frac{d^3 r^2}{d t^3} = 2 \dddot{r} r + 6 \ddot{r} \dot{r}.
+	\hspace{1 cm}
+	\dddot{r} = \frac{d}{d t} \ddot{r}.
+\end{equation*}
+Но из закона Кулона:
+\begin{equation*}
+	m \ddot{r} = \frac{e_1 e_2}{r^2}
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\frac{d}{d t} \ddot{r} = -2 \frac{e_1 e_2}{m r^3} \dot{r} = -\frac{2 }{r} \left(\frac{e_1 e_2}{m r^2}\right) \dot{r} = - \frac{2 \ddot{r} \dot{r}}{r}.
+\end{equation*}
+А что, неплохо так упростилось:
+\begin{equation*}
+	\frac{d^3 r^2}{d t^3} = -\frac{4}{r} \ddot{r} \dot{r} r + 6 \ddot{r} \dot{r} = 2 \ddot{r} \dot{r}.
+\end{equation*}
+Здорово! Теперь излученную энергию мы, вроде бы, сможем высчитать:
+\begin{equation*}
+	\varepsilon_{\text{изл}} = \int_{-\infty}^{\infty} I(t) d t = \frac{2 q^2}{15 c^5} \int_{-\infty}^{\infty} \ddot{r}^2 \dot{r}^2 d t = \int_{-v_\infty}^{v_\infty} \ddot{r} \dot{r}^2 d \dot{r},
+\end{equation*}
+как в прошлый раз предполагаем, что $\varepsilon_{\text{изл}} \ll \varepsilon_{\text{полн}}$. Что вроде бы как понятно, потому как сейчас у нас энергия ещё меньше чем в прошлый раз должна быть. Но всё равно наше предположение потребует проверки.
+
+Берем закон сохранения энергии и закон Кулона:
+\begin{equation*}
+	\frac{\mu v_\infty^2}{2} = \frac{\mu v^2}{2} + \frac{e_1 e_2}{r},
+	\hspace{1 cm}
+	\ddot{r} = \frac{e_1 e_2}{\mu r^2}.
+\end{equation*}
+Возводим ЗСЭ в квадрат и находим член, как в законе Кулона, заменяя его на $\ddot{r}$, а именно:
+\begin{equation*}
+	\ddot{r} = \frac{\mu}{4 e_1 e_2} (v_\infty^2 - v^2)^2.
+\end{equation*}
+И теперь наш интеграл легко берется, потому как это просто полном:
+\begin{equation*}
+	\varepsilon =  \frac{2 q^2}{15 c^5} \int_{-v_\infty}^{v_\infty} \frac{\mu}{4 e_2 e_1} (v_\infty^2 - v^2)^2 v^2 d v
+	=
+	\frac{\mu q^2}{30 c^5 e_1 e_2} \left(\frac{v_\infty^4 v^3}{3} - \frac{2 v_\infty^2 v^5}{5} + \frac{v^7}{7}\right)
+	\bigg|_{-v_\infty}^{v_\infty}
+	= \frac{16}{3150} \frac{\mu q^2}{e_1 e_2 c^5} v_\infty^7
+\end{equation*}
+Надо показать, что наше предположение верно, то есть что полученная энергия много меньше энергии сталкивающихся частиц:
+\begin{equation*}
+	\varepsilon = \left(\frac{\mu v_\infty^2}{2}\right) \left(\frac{q^2}{e_1 e_2}\right) \frac{32}{3150} \left(\frac{v_{\infty}}{c}\right)^5 \ll \frac{\mu v_\infty^2}{2}.
+\end{equation*}
+
+\subsubsection*{Задача 18}
+У нас есть некий электрон летящий по окружности. Магнитное поле пусть направлено  $\vc{H} = (0, 0, H)$. И у нас релетявистсктй случай $v \to c$.
+
+Пренебрегаем излучением:
+\begin{equation*}
+	\frac{d \vc{p}}{d t} = e \vc{E} + \frac{e}{c}[\vc{v} \times \vc{H}].
+\end{equation*}
+Изменение энергии при $E = 0$ будет:
+\begin{equation*}
+	\frac{d \varepsilon}{d t} = e \vc{v} \vc{E} = 0.
+\end{equation*}
+То есть константа, а значит:
+\begin{equation*}
+	\varepsilon = \gamma mc^2 = \const
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\gamma = \const.
+\end{equation*}
+Тогда далее жить намного удобнее, найдем радиус орбиты:
+\begin{equation*}
+	\frac{d \vc{p}}{d t} =  \gamma m \vc{\dot{v}} = \frac{e}{c} [\vc{v} \times \vc{H}].
+\end{equation*}
+\begin{equation*}
+	\vc{v}(t) = \vc{v}_0 + \frac{e}{m c\gamma} [(\vc{r} - \vc{r}_0) \times \vc{H}],
+	\hspace{0.3 cm}
+	\vc{v}_0 =\frac{e}{m c\gamma} [\vc{r}_0 \times \vc{H}]
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	\vc{v} = \frac{e}{\gamma m c} [\vc{r} \times \vc{H}]
+\end{equation*}
+Тогда имеем радиус и циклотронную частоту:
+\begin{equation*}
+	R = \frac{\gamma mc}{e H}v,
+	\hspace{1 cm}
+	\Omega = \frac{e H}{\gamma mc}.
+\end{equation*}
+Далее достаточно большой блок теории -- нужны запаздывающие потенциалы, но мы будем пытаться обойтись без них, введем на веру \textit{потенциалы Лиенара-Вихерта}:
+\begin{equation*}
+	\varphi = \frac{e}{R \left(1 - \frac{\vc{n} \vc{v}}{c}\right)},
+	\hspace{0.5 cm}
+	\vc{A} = \frac{e \vc{v}}{R \left(1 - \frac{\vc{n} \vc{v}}{c}\right)}.
+\end{equation*}
+
+Переходим в мгновенную систему отсчета $K'$:
+\begin{equation*}
+	\vc{v}'= (0,0,0); \ \vc{v}(0,v,0);
+	\ \vc{H}(0,0,H); \ \vc{E} = (0,0,0).
+\end{equation*}
+Тогда, зная как преобразуются компоненты поля:
+\begin{equation*}
+	E_\parallel' = E_\parallel = 0, \
+	H_\parallel' = H_\parallel = 0.
+\end{equation*}
+\begin{equation*}
+	\vc{E}_\perp' = \gamma = \left(\vc{E}_\perp - \frac{1}{c}[\vc{v}\times \vc{H}]\right),
+	\ 
+	\vc{H}_\perp' = \gamma = \left(\vc{H}_\perp - \frac{1}{c}[\vc{v}\times \vc{E}]\right).
+\end{equation*}
+Таким образом получаем:
+\begin{equation*}
+	\vc{H}' = (0,0 \gamma H),
+	\
+	\vc{E}' = (- \beta\gamma H, 0,0).
+\end{equation*}
+Тогда в новой системе отсчета движение описывается как:
+\begin{equation*}
+	\frac{d p'}{d t'} = e \vc{E}' + \underbrace{\frac{e}{c}[\vc{v}' \times \vc{H}']}_{0} = \underbrace{\dot{\gamma}' m \vc{v}'}_{0} + \gamma' m \dot{\vc{v}}'
+	\hspace{0.5 cm}
+	\Rightarrow
+	\hspace{0.5 cm}
+	m \vc{\dot{v}}' = e \vc{E}'.
+\end{equation*}
+\begin{equation*}
+	\ddot{\vc{r}}' = - \frac{e \beta \gamma H}{m} \vc{e}_x
+	\hspace{0.5 cm}
+	\vc{\ddot{d}}' = e \ddot{\vc{r}}' = - \frac{e^2 \beta \gamma H}{m} \vc{e}_x.
+\end{equation*}
+
+
+Тогда интенсивность излучения:
+\begin{equation*}
+	I' = \frac{2 |\vc{\ddot{d}}'|^2}{3 c^3} = \frac{2 e^4 \beta^2 \gamma^2 H^2}{3 m^2 c^3}.
+\end{equation*}
+Но в то же время $I' = - d\varepsilon' / d t'$  и $I = -d \varepsilon /d t$.
+ счастью наше преобразование нам даёт, что $x'=y'=z'=0$, и главное -- $t = \gamma t'$.
+ И большая удача, что преобразование четыре импульса системы тоже даёт нам $p_x'=p_y'=p_z'=0$, и самое главное -- $\varepsilon = \gamma \varepsilon'$.
+ Тогда и $I = I'$, по замечанию выше.
